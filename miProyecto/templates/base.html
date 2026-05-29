@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristhian Ariel Abad Figueroa</title>
+    <style>
+        :root {
+            --bg-dark: #070b0e;       /* Negro noche profundo */
+            --gold-light: #f3e5ab;    /* Dorado suave */
+            --gold-main: #d4af37;     /* Dorado clásico */
+            --text-light: #f8fafc;    /* Blanco suavizado */
+            --text-muted: #64748b;    /* Gris elegante */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            /* Efecto de iluminación sutil en el fondo usando solo CSS */
+            background: radial-gradient(circle at 50% 40%, rgba(212, 175, 55, 0.08) 0%, transparent 60%), #070b0e;
+        }
+
+        /* Encabezado */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 2.5rem 8%;
+        }
+
+        .logo {
+            font-size: 1.1rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            color: var(--gold-main);
+            text-decoration: none;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--gold-light);
+        }
+
+        /* Contenedor Principal (Centrado y minimalista) */
+        main {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 8%;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .tagline {
+            color: var(--gold-main);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            margin-bottom: 1.5rem;
+            display: block;
+            font-weight: 600;
+        }
+
+        h1 {
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 2rem;
+            font-weight: 800;
+            letter-spacing: -2px;
+            /* Gradiente elegante aplicado directamente sobre las letras de tu nombre */
+            background: linear-gradient(135deg, #ffffff 40%, var(--gold-main) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            line-height: 1.8;
+            max-width: 650px;
+            margin: 0 auto 3rem auto;
+            font-weight: 400;
+        }
+
+        /* Botón de Acción Estilizado */
+        .btn-outline {
+            display: inline-block;
+            padding: 1rem 3rem;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            color: var(--gold-light);
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            border-radius: 50px;
+            transition: all 0.4s ease;
+            background: rgba(212, 175, 55, 0.02);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--gold-main);
+            background-color: var(--gold-main);
+            color: var(--bg-dark);
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.2);
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+            border-top: 1px solid rgba(255, 255, 255, 0.03);
+        }
+
+        /* Optimización para Celulares */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.8rem;
+                letter-spacing: -1px;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            header {
+                padding: 2rem 5%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">CAAF</a>
+        <a href="mailto:tu-correo@ejemplo.com" class="nav-link">Contacto</a>
+    </header>
+
+    <main>
+        <div class="hero-content">
+            <span class="tagline">Creatividad y Excelencia Digital</span>
+            <h1>Cristhian Ariel Abad Figueroa</h1>
+            <p>Empoderando marcas y personas a través de soluciones web innovadoras, elegantes y de alto impacto. Convierte tu visión en una experiencia digital única.</p>
+            <a href="mailto:tu-correo@ejemplo.com" class="btn-outline">Iniciar Proyecto</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Cristhian Ariel Abad Figueroa. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
